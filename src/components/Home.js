@@ -8,14 +8,20 @@ const Home = () => {
   useEffect(() => {
     axios.get('https://swapi.dev/api/people')
       .then(res => {
-      console.log(res.data)
+        console.log(res.data)
+        setStarWars(res.data.results)
     })
-  })
+  },[])
 
-  // <h1>Home</h1>
+  const renderNames = () => {
+    return starWars.map(star => (
+      <h1>{star.name}</h1>
+    ))
+  }
+
   return (
     <div>
-    <h1>Home</h1>
+      {renderNames()}
     </div>
   )
 }
