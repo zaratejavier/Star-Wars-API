@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import { Card } from "semantic-ui-react"
+import "./Home.css"
 
 
 const Home = () => {
   const [starWars, setStarWars] = useState([])
-
 
   useEffect(() => {
     getStarWarsData();
@@ -15,7 +15,6 @@ const Home = () => {
     // axios.get('https://swapi.dev/api/people')
     axios.get('https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json')
       .then(res => {
-        console.log(res.data)
         setStarWars(res.data)
         console.log(res.data)
     })
@@ -26,19 +25,20 @@ const Home = () => {
       // <Card>
       //   <Card.Header>{star}</Card.Header>
       // </Card>
-      <div>
+      <div className="Character-name">
         {star.name}
         Length: {star.length}
-
       </div>
     ))
   }
 
   return (
-    <div>
-      <h3>Star Wars</h3>
-      {renderNames()}
-    </div>
+    <>
+      <h3 className="title">Star Wars Characters</h3>
+      <div className='haa'>
+        {renderNames()}
+      </div>
+    </>
   )
 }
 

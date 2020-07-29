@@ -1,0 +1,21 @@
+.Character-name{
+   border: .2rem solid gray;
+   padding: 1rem;
+   width: 30%;
+   margin: 1rem;
+  display: flex;
+  justify-content: center;
+   
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.haa{
+    display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
