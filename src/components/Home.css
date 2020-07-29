@@ -19,3 +19,8 @@
   justify-content: space-around;
   flex-flow: row wrap;
 }
+
+.Image{
+  width: 12rem;
+  height: 12rem;
+}

@@ -17,7 +17,10 @@ const Home = () => {
       .then(res => {
         setStarWars(res.data)
         console.log(res.data)
-    })
+      }).catch((err) => {
+       console.log(err) 
+      }
+    )
   }
 
   const renderNames = () => {
@@ -27,7 +30,7 @@ const Home = () => {
       // </Card>
       <div className="Character-name">
         {star.name}
-        Length: {star.length}
+        <img className='Image' src={star.image}/>
       </div>
     ))
   }
