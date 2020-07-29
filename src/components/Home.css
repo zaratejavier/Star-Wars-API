@@ -1,10 +1,11 @@
-.Character-name{
-   border: .2rem solid gray;
+.Character-info{
+   /* border: .2rem solid gray; */
    padding: 1rem;
    width: 30%;
    margin: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
    
 }
 
@@ -14,13 +15,13 @@
   padding: 1rem;
 }
 
-.haa{
-    display: flex;
+.render-names{
+  display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
 }
 
 .Image{
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
 }
