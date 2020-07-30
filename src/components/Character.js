@@ -8,15 +8,13 @@ const Character = (props) => {
   // const [editing, setEditing] = useState(false)
   return (
       <div className="Character-info" key={props.id}>
-        {/* {props.name}
-      <img className='Image' src={props.image} /> */}
-      <Button
-        as={Link}
-        to={{pathname: `/Character/${props.id}`}}
-      >
-        {props.name}
-        <img className='Image' src={props.image} />
-      </Button>
+        <Button
+          as={Link}
+          to={{pathname: `/Character/${props.id}`}}
+        >
+          {props.name}
+          <img className='character-image' src={props.image} />
+        </Button>
       </div>
   )
   };

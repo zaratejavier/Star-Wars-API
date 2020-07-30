@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import Character from "./Character"
-import { Card } from "semantic-ui-react"
+// import { Card } from "semantic-ui-react"
 
 
 const Home = () => {
@@ -33,12 +33,12 @@ const Home = () => {
   }
 
   return (
-    <>
-      <h3 className="title">Star Wars Characters</h3>
+    <div>
+      <h1 className="title">Star Wars Characters</h1>
       <div className='render-names'>
         {renderNames()}
       </div>
-    </>
+    </div>
   )
 }
 

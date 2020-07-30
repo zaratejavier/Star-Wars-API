@@ -1,8 +1,11 @@
 import React from "react"
 import { Menu } from "semantic-ui-react"
 import { Link } from "react-router-dom"
+import "./Character.css"
+
 
 const Navbar = () => (
+  <div>
   <Menu>
     <Link to="/">
       <Menu.Item>
@@ -14,7 +17,8 @@ const Navbar = () => (
         About
       </Menu.Item>
     </Link>
-  </Menu>
+    </Menu>
+  </div>
 )
 
 export default Navbar

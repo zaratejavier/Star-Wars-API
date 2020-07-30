@@ -9,8 +9,8 @@ import {Container} from "semantic-ui-react"
 import CharacterView from './components/CharacterView';
 
 const App = () => (
-  <div>
-    <Navbar />
+  <div className="background">
+    <Navbar/>
     <Container>
       <Switch>
         <Route exact path="/" component={Home} />
