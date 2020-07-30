@@ -8,9 +8,7 @@ const CharacterView = (props) => {
     getCharacter();
   }, [])
   
-
    const getCharacter = ()=> {
-    // axios.get('https://swapi.dev/api/people')
     axios.get(`https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/id/${props.match.params.id}.json`)
       .then(res => {
         setCharacter(res.data)
@@ -19,11 +17,12 @@ const CharacterView = (props) => {
        console.log(err) 
       }
     )
-  }
+   }
 
   return (
     <div>
-      <h3>Hello</h3>
+      <h4>{character.name}</h4>
+      <img className='Image' src={character.image} />
     </div>
   )
 }

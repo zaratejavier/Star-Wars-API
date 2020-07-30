@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import Character from "./Character"
 import { Card } from "semantic-ui-react"
-import "./Home.css"
 
 
 const Home = () => {
