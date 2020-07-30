@@ -6,6 +6,7 @@ import About from "./components/About"
 import NoMatch from "./components/NoMatch"
 import Navbar from "./components/Navbar"
 import {Container} from "semantic-ui-react"
+import CharacterView from './components/CharacterView';
 
 const App = () => (
   <div>
@@ -14,6 +15,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
+        <Route exact path="/Character/:id" component={CharacterView}/>
         <Route component={NoMatch} />
       </Switch>
     </Container>
