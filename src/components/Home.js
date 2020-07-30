@@ -33,7 +33,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="haha" >
       <h1 className="title">Star Wars Characters</h1>
       <div className='render-names'>
         {renderNames()}
