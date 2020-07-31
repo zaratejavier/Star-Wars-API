@@ -19,23 +19,27 @@ const CharacterView = (props) => {
       }
     )
    }
+  
 
   return (
-    <div key={character.id}>
+    <div key={character.id} >
       <h1 className="view-header">{character.name}</h1>
-      <img className='view-image' alt={character.name} src={character.image} />
-      <div style={{color:"rgba(241, 210, 86, 0.899)"}}>Home World: {character.homeworld}</div>
-      <div>Species: {character.species}</div>
-      <div>Gender: {character.gender}</div>
-      <div>Hair Color: {character.hairColor}</div>
-      <div>Masters: {character.masters}</div>
-      <div>Height: {character.height}</div>
-      <div>Born Location: {character.bornLocation}</div>
+      <div className="all-characterview">
+        <div>
+          <img className='view-image' alt={character.name} src={character.image} /> 
+        </div>
 
-
-
-
-
+        <div>
+          <div><b>Home World:</b> {character.homeworld}</div>
+          <div><b>Species:</b> {character.species}</div>
+          <div><b>Gender:</b> {character.gender}</div>
+          <div><b>Hair Color:</b> {character.hairColor}</div>
+          <div><b>Masters:</b> {character.masters}</div>
+          <div><b>Height:</b> {character.height}</div>
+          <div><b>Born Location:</b> {character.bornLocation}</div>
+        </div>
+        
+       </div>
     </div>
   )
 }

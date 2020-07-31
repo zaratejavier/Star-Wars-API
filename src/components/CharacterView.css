@@ -6,7 +6,11 @@
 .view-image{
   height: 20rem;
   width: 20rem;
-  display: flex;
-  justify-content: center;
+
 }
 
+.all-characterview{
+  display: flex;
+  justify-content: space-evenly;
+
+}
