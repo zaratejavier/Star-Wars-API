@@ -19,7 +19,9 @@ const Planets = () => {
 
   const renderPlanets = () => {
     return planets.map(planet => (
-      <p>{planet.name}</p>
+      <div key={planet.id}>
+        <p>{planet.name}</p>
+      </div>
     ))
   }
 
@@ -32,3 +34,4 @@ const Planets = () => {
 }
 
 export default Planets
+

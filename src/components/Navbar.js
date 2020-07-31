@@ -12,16 +12,16 @@ const Navbar = () => (
         Home
       </Menu.Item>
     </Link>
-    <Link to="/about">
-      <Menu.Item>
-        About
-      </Menu.Item>
-      </Link>
        <Link to="/Planets">
       <Menu.Item>
         Planets
       </Menu.Item>
     </Link>
+    <Link to="/about">
+      <Menu.Item>
+        About
+      </Menu.Item>
+      </Link>
     </Menu>
    
   </div>

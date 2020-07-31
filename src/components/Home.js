@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 import Character from "./Character"
+import StarWars from '../images/starwars.png'
+
 // import { Card } from "semantic-ui-react"
 
 
@@ -33,8 +35,11 @@ const Home = () => {
   }
 
   return (
+    
     <div className="haha" >
-      <h1 className="title">Star Wars Characters</h1>
+       <img className="starwars-image" src={StarWars} alt="logo" />;
+
+      {/* <h1 className="title">Star Wars Characters</h1> */}
       <div className='render-names'>
         {renderNames()}
       </div>
