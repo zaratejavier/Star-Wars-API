@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Axios from "axios"
+import Planet from "./Planet"
 
 const Planets = () => {
   const [planets, setPlanets] = useState([])
@@ -19,9 +20,10 @@ const Planets = () => {
 
   const renderPlanets = () => {
     return planets.map(planet => (
-      <div key={planet.id}>
-        <p>{planet.name}</p>
-      </div>
+      <Planet
+        key={planet.id}
+        {...planet}
+      />
     ))
   }
 
