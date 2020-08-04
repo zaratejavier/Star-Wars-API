@@ -14,7 +14,6 @@ const Planets = () => {
       .then(res => {
         console.log(res.data)
         setPlanets(res.data.results)
-
       })
   }
 
@@ -29,7 +28,7 @@ const Planets = () => {
 
   return (
     <>
-      <h1>Planets</h1>
+      <h1 className="planet-title">Planets</h1>
       {renderPlanets()}
     </>
   )

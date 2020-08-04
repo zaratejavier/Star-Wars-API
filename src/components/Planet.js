@@ -17,7 +17,7 @@ const Planet = (props) => {
     //   </div>
     
     <div className="planet-card">
-    <p className="planet-title">Name: {props.name}</p>
+    <p>Name: {props.name}</p>
 
       <p>Diameter: {props.diameter}</p>
       <p>Population: {props.population}</p>
