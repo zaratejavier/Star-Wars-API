@@ -21,7 +21,7 @@ const Planets = () => {
   const renderPlanets = () => {
     return planets.map(planet => (
       <Planet
-        key={planet.id}
+        key={planet.url}
         {...planet}
       />
     ))

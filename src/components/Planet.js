@@ -1,6 +1,8 @@
 import React from "react"
 import { Button } from "semantic-ui-react"
 import { Link } from "react-router-dom"
+import "./Planet.css"
+
 
 const Planet = (props) => {
   return (
@@ -13,11 +15,11 @@ const Planet = (props) => {
     //       {props.name}
     //     </Button>
     //   </div>
+    
+    <div className="planet-card">
+    <p className="planet-title">Name: {props.name}</p>
 
-    <div>
-      <p>Name: {props.name}</p>
       <p>Diameter: {props.diameter}</p>
-
       <p>Population: {props.population}</p>
     </div>
   )
