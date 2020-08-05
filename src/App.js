@@ -21,7 +21,6 @@ const App = () => (
         <Route exact path="/Character/:id" component={CharacterView} />
         <Route exact path="/Planets" component={Planets} />
         <Route exact path="/Planet/:id" component={PlanetView}/>
-        
         <Route component={NoMatch} />
       </Switch>
     </Container>

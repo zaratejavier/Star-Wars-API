@@ -7,4 +7,10 @@
 .planet-card{
   display: flex;
   justify-content: space-around;
+  border: .1rem solid gray;
+  height: 4rem;
+  margin: 2rem;
+  padding: 1rem;
+
+  
 }
