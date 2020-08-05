@@ -7,18 +7,18 @@ import "./Planet.css"
 const Planet = (props) => {
   return (
     
-    // <div key={props.id}>
-    //     <Button
-    //       as={Link}
-    //       to={{pathname: `/Planet/${props.id}`}}
-    //     >
-    //       {props.name}
-    //     </Button>
-    //   </div>
+    <div key={props.id}>
+        <Button
+          as={Link}
+          to={{pathname: `/Planet/1`}}
+        >
+          {props.name}
+        </Button>
+      </div>
     
-    <div className="planet-card">
-    <p>Name: {props.name}</p>
-    </div>
+    // <div className="planet-card">
+    // <p>Name: {props.name}</p>
+    // </div>
   )
 
   
