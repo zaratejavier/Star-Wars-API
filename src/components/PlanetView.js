@@ -10,10 +10,11 @@ const PlanetView = (props) => {
   }, [])
 
   const getPlanet = () => {
-    axios.get(`http https://swapi.dev/api/planets/1`)
+    axios.get(`https://swapi.dev/api/planets/1`)
       .then(res => {
         setPlanet(res.data)
         console.log(res.data)
+        debugger
       }).catch((err) => {
        console.log(err) 
       }
@@ -21,7 +22,11 @@ const PlanetView = (props) => {
   }
   
   return (
-    <h1>PlanetView</h1>
+    <div>
+      <h1>PlanetView</h1>
+      {planet.name}
+    </div>
+
   )
 }
 

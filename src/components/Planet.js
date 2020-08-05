@@ -4,15 +4,15 @@ import { Link } from "react-router-dom"
 import "./Planet.css"
 
 
-const Planet = (props) => {
+const Planet = (id) => {
   return (
     
-    <div key={props.id}>
+    <div key={id}>
         <Button
           as={Link}
-          to={{pathname: `/Planet/1`}}
+          to={{pathname: `/Planet/${id}`}}
         >
-          {props.name}
+        
         </Button>
       </div>
     
@@ -22,6 +22,10 @@ const Planet = (props) => {
   )
 
   
+}
+
+for (var i = 1; i <= 100; i++) {
+  Planet(i)
 }
 
 export default Planet
