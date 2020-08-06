@@ -17,16 +17,16 @@ const Navbar = () => (
         Planets
       </Menu.Item>
     </Link>
-    <Link to="/about">
-      <Menu.Item>
-        About
-      </Menu.Item>
-      </Link>
     <Link to="/Vehicles">
       <Menu.Item>
         Vehicles
       </Menu.Item>
     </Link>
+    <Link to="/about">
+      <Menu.Item>
+        About
+      </Menu.Item>
+      </Link>
     </Menu>
    
   </div>
