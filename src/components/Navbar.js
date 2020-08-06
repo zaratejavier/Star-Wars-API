@@ -22,6 +22,11 @@ const Navbar = () => (
         About
       </Menu.Item>
       </Link>
+    <Link to="/Vehicles">
+      <Menu.Item>
+        Vehicles
+      </Menu.Item>
+    </Link>
     </Menu>
    
   </div>

@@ -9,6 +9,7 @@ import {Container} from "semantic-ui-react"
 import CharacterView from './components/CharacterView';
 import Planets from "./components/Planets"
 import PlanetView from "./components/PlanetView"
+import Vehicles from "./components/Vehicles"
 
 const App = () => (
   <>
@@ -16,12 +17,13 @@ const App = () => (
     <Navbar/>
     <Container>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/Character/:id" component={CharacterView} />
-        <Route exact path="/Planets" component={Planets} />
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/Character/:id" component={CharacterView}/>
+        <Route exact path="/Planets" component={Planets}/>
         <Route exact path="/Planet/:id" component={PlanetView}/>
-        <Route component={NoMatch} />
+        <Route exact path="/Vehicles" component={Vehicles}/>        
+        <Route component={NoMatch}/>
       </Switch>
     </Container>
   {/* // </div> */}
