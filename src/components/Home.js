@@ -19,6 +19,7 @@ const Home = () => {
       .then(res => {
         setCharacters(res.data)
         console.log(res.data)
+        debugger
       }).catch((err) => {
        console.log(err) 
       }
