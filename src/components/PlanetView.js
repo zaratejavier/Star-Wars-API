@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import "./Planet.css"
+
 
 
 const PlanetView = (props) => {
@@ -14,7 +16,6 @@ const PlanetView = (props) => {
       .then(res => {
         setPlanet(res.data)
         console.log(res.data)
-        debugger
       }).catch((err) => {
        console.log(err) 
       }
@@ -23,10 +24,17 @@ const PlanetView = (props) => {
   
   return (
     <div>
-      <h1>PlanetView</h1>
-      {planet.name}
-    </div>
+        <h1 className="planet-view-title">{planet.name}</h1>
+      <div className='info-planet'>
 
+        <div><b>Population:</b> {planet.population}</div>
+        <div>Climate: {planet.climate}</div>
+        <div>Diameter: {planet.diameter}</div>
+        <div>Rotation Period: {planet.rotation_period}</div>
+
+        
+      </div>
+    </div>
   )
 }
 

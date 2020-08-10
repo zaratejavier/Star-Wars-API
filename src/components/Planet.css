@@ -11,6 +11,14 @@
   height: 4rem;
   margin: 2rem;
   padding: 1rem;
+}
 
-  
+.planet-view-title{
+  display: flex;
+  justify-content:center;
+}
+
+.info-planet{
+  display: flex;
+  justify-content: space-evenly;
 }
