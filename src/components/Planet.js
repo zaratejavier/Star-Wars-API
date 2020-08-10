@@ -4,28 +4,24 @@ import { Link } from "react-router-dom"
 import "./Planet.css"
 
 
-const Planet = (id) => {
+const Planet = (props) => {
+  const url = new URL(props.url);
+  const id = url.pathname.split('/')[3]
+
   return (
     
-    <div key={id}>
+    <div>
         <Button
           as={Link}
           to={{pathname: `/Planet/${id}`}}
         >
-        
+        {props.name}
         </Button>
       </div>
-    
-    // <div className="planet-card">
-    // <p>Name: {props.name}</p>
-    // </div>
   )
 
   
 }
 
-for (var i = 1; i <= 100; i++) {
-  Planet(i)
-}
 
 export default Planet

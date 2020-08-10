@@ -10,7 +10,7 @@ const PlanetView = (props) => {
   }, [])
 
   const getPlanet = () => {
-    axios.get(`https://swapi.dev/api/planets/1`)
+    axios.get(`https://swapi.dev/api/planets/${props.match.params.id}`)
       .then(res => {
         setPlanet(res.data)
         console.log(res.data)
