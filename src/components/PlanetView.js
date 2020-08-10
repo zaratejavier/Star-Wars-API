@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 import "./Planet.css"
 
-
-
 const PlanetView = (props) => {
   const [planet, setPlanet] = useState({})
 

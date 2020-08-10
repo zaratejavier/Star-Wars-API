@@ -5,12 +5,12 @@ import { Link } from "react-router-dom"
 const Vehicle = (props) => {
   const url = new URL(props.url);
   const id = url.pathname.split('/')[3]
-  
+
    return (
     <div>
         <Button
           as={Link}
-          to={{pathname: `/Planet/${id}`}}
+          to={{pathname: `/Vehicle/${id}`}}
         >
         {props.name}
         </Button>

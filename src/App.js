@@ -10,6 +10,7 @@ import CharacterView from './components/CharacterView';
 import Planets from "./components/Planets"
 import PlanetView from "./components/PlanetView"
 import Vehicles from "./components/Vehicles"
+import VehicleView from './components/VehicleView';
 
 const App = () => (
   <>
@@ -22,7 +23,8 @@ const App = () => (
         <Route exact path="/Character/:id" component={CharacterView}/>
         <Route exact path="/Planets" component={Planets}/>
         <Route exact path="/Planet/:id" component={PlanetView}/>
-        <Route exact path="/Vehicles" component={Vehicles}/>        
+        <Route exact path="/Vehicles" component={Vehicles} />        
+        <Route exact path="/Vehicle/:id" component={VehicleView}/>
         <Route component={NoMatch}/>
       </Switch>
     </Container>
